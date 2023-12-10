@@ -50,14 +50,36 @@
 // 4 => -4, -3, -2, -1, 0, 1, 2, 3, 4
 // 2 => -2, -1, 0, 1, 2
 
-Console.Clear(); //console cleaning before start
-Console.WriteLine("Specify the A number and press ENTER");
-int a = Convert.ToInt32(Console.ReadLine());
-int count = a * (-1);
+// Console.Clear(); //console cleaning before start
+// Console.WriteLine("Specify the A number and press ENTER");
+// int a = Convert.ToInt32(Console.ReadLine());
+// int count = a * (-1);
 
-while (count <= a)
-    {
-    Console.Write( count + " |");
-    count = count + 1;
-    }
+// while (count <= a)
+//     {
+//     Console.Write( count + " |");
+//     count = count + 1;
+//     }
 //-------------------------------------------------------------------------------------------------------
+
+
+
+//-------------------------------------------------------------------------------------------------------
+// Напишите программу, которая принимает на вход трехзначное целое число,
+// и на выходе показывает сумму первой и последней цифры этого числа.
+// например
+// 465 => 10
+// 557 => 12
+// 930 => 9
+
+Console.Clear(); //console cleaning before start
+Console.WriteLine("Specify the number of 3 digits and press ENTER");
+int n = Convert.ToInt32(Console.ReadLine());
+
+
+Console.Clear(); //console cleaning
+int n1 = n / 100;
+int n3 = n % 10;
+Console.WriteLine("Your Full Number is "+ n );
+Console.Write("1st and 3rd digits sum is ");
+Console.WriteLine(n1 + n3);
