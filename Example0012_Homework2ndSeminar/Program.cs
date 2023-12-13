@@ -10,8 +10,6 @@ else
 
 
 
-
-
 // Задача 2, задача 2 : Напишите программу, которая принимает на вход координаты
 // точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер координатной четверти
 // плоскости, в которой находится эта точка.
@@ -51,15 +49,8 @@ if (n1 < n2)
 else
     Console.WriteLine(n1);
 
-
-
-
-
-
-
 //Задача 4: Напишите программу, которая на вход принимает натуральное 
 //число N, а на выходе показывает его цифры через запятую.
-
 Console.Clear();
 Console.WriteLine("Введите натуральное число и нажмите ENTER");
 int N = Convert.ToInt32(Console.ReadLine());
@@ -67,28 +58,16 @@ int N = Convert.ToInt32(Console.ReadLine());
 if (N < 10)
 {
     Console.WriteLine(N);
-
 }
 else
 {
-
     while (N > 0)
     {
         int numbers = N % 10;
         N = N / 10;
-    
-        if (N > 0)
-        {
-            Console.Write(numbers  + ", ");
-
-        }
-        else
-        {
-            Console.Write(numbers);
-        }
-    
+        if (N > 0) Console.Write(numbers  + ", ");
+        else  Console.Write(numbers);
     }
-
 }
 
 
