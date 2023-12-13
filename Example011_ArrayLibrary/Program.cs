@@ -23,13 +23,38 @@ void PrintArray(int[] col)
     }
 }
 
+int IndexOf(int[] collection, int find)
+{
+    int count = collection.Length;
+    int index = 0;
+    int position = -1;
+    while (index < count)
+    {
+
+        if (collection [index] == find)
+        {
+            position = index;
+            break; //Programm Full Stop
+        }
+        
+        index++;
+    }
+    return position;
+}
+
 int[] array = new int[10]; //Указание, что по умолчанию в массиве будет 10 элементов
+
 
 Console.Clear();
 Console.WriteLine();
 Console.WriteLine("----Random Array----");
 FillArray(array);
+array[5] = 4;
+array[9] = 4;
 PrintArray(array);
 Console.WriteLine();
 Console.WriteLine("----Random Array----");
 Console.WriteLine();
+
+int pos = IndexOf(array, 444);
+Console.WriteLine(pos);
