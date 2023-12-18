@@ -67,24 +67,24 @@
 
 //Задача 4: Напишите программу, которая на вход принимает натуральное 
 //число N, а на выходе показывает его цифры через запятую.
-Console.Clear();
-Console.WriteLine("Введите натуральное число и нажмите ENTER");
-int N = Convert.ToInt32(Console.ReadLine());
+// Console.Clear();
+// Console.WriteLine("Введите натуральное число и нажмите ENTER");
+// int N = Convert.ToInt32(Console.ReadLine());
 
-if (N < 10)
-{
-    Console.WriteLine(N);
-}
-else
-{
-    while (N > 0)
-    {
-        int numbers = N % 10;
-        N = N / 10;
-        if (N > 0) Console.Write(numbers + ", ");
-        else Console.Write(numbers);
-    }
-}
+// if (N < 10)
+// {
+//     Console.WriteLine(N);
+// }
+// else
+// {
+//     while (N > 0)
+//     {
+//         int numbers = N % 10;
+//         N = N / 10;
+//         if (N > 0) Console.Write(numbers + ", ");
+//         else Console.Write(numbers);
+//     }
+// }
 
 
 
