@@ -42,17 +42,17 @@
 
 // // Задача 3: Напишите программу, которая принимает на вход целое число из 
 // // отрезка [10, 99] и показывает наибольшую цифру числа.
-Console.Clear(); 
-Console.WriteLine("Add the number between 10 and 99");
-int n = Convert.ToInt32(Console.ReadLine());
+// Console.Clear(); 
+// Console.WriteLine("Add the number between 10 and 99");
+// int n = Convert.ToInt32(Console.ReadLine());
 
-int n1 = n / 10;
-int n2 = n % 10;
+// int n1 = n / 10;
+// int n2 = n % 10;
 
 
-if (n > 9 && n < 100)
-{
-Console.Write("The highest symbol of the " + n + " is ");
+// if (n > 9 && n < 100)
+// {
+// Console.Write("The highest symbol of the " + n + " is ");
 
 // if (n1 < n2)
 //     Console.WriteLine(n2);
