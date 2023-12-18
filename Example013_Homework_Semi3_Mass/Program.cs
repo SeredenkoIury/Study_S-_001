@@ -1,6 +1,5 @@
-﻿// // Урок 3. Массивы
-// // Сдавать ссылкой на GITHUB(отправить в комментарии к дз)
-
+﻿// СЕРЕДЕНКО ЮРИЙ ДАНИЛОВИЧ
+// ДОМАШНЕЕ ЗАДАНИЕ Урок 3. Массивы
 
 //===========================================================================================01
 // // Задача 1: Задайте одномерный массив из 10 целых чисел от 1 до 100.
@@ -56,7 +55,7 @@
 //===========================================================================================03
 // Задача 3: Задайте массив из вещественных чисел с ненулевой дробной частью. 
 // Найдите разницу между максимальным и минимальным элементов массива.
-
+//
 // Console.Clear();
 // double[] array = new double[5];
 // for (int i = 0; i < array.Length; i++) 
@@ -98,45 +97,45 @@
 
 
 
-// Вывод в консоль разности максимального и минимального значений элементов массива   
 //===========================================================================================04
-// // Задача 4**(не обязательно): Дано натуральное число в диапазоне от 1 до 100 000. 
+// // Задача 4: Дано натуральное число в диапазоне от 1 до 100 000. 
 // Создайте массив, состоящий из цифр этого числа. Старший разряд числа должен 
 // располагаться на 0-м индексе массива, младший – на последнем. Размер массива 
 // должен быть равен количеству цифр.
+//-------------------------------
 
-Console.Clear();
-Console.WriteLine("Add your number between 1 and 100000 and press ENTER");  
-int nmbr = Convert.ToInt32(Console.ReadLine());  
+// Console.Clear();
+// Console.WriteLine("Add your number between 1 and 100000 and press ENTER");  
+// int nmbr = Convert.ToInt32(Console.ReadLine());  
 
-int smbls = 0; // how much symbols the number have
-int tempNum = nmbr;  
+// int smbls = 0; // how much symbols the number have
+// int tempNum = nmbr;  
 
-while (tempNum != 0) // finding nums
-{
-    tempNum = tempNum / 10;  
-    smbls++;  
-}
+// while (tempNum != 0) // finding nums
+// {
+//     tempNum = tempNum / 10;  
+//     smbls++;  
+// }
 
-int[] array = new int[smbls]; 
-int[] array2 = new int[smbls]; 
+// int[] array = new int[smbls]; 
+// int[] array2 = new int[smbls]; 
 
-tempNum = nmbr; 
+// tempNum = nmbr; 
 
-if (nmbr > 1 && nmbr < 100000)  
-{
-    for (int i = 0; i < smbls; i++)  
-    {
-        array[i] = tempNum %10;  
-        tempNum = tempNum / 10; 
-    }
-    for(int i =0; i<smbls; i++) 
-      {
-        array2[i] =array[smbls-1-i];
-        Console.Write(array2[i] + " | ");  
-      }
-}
-else  
-{
-    Console.WriteLine("This is not a number between 1 and 100000"); 
-}
+// if (nmbr > 1 && nmbr < 100000)  
+// {
+//     for (int i = 0; i < smbls; i++)  
+//     {
+//         array[i] = tempNum %10;  
+//         tempNum = tempNum / 10; 
+//     }
+//     for(int i =0; i<smbls; i++) 
+//       {
+//         array2[i] =array[smbls-1-i];
+//         Console.Write(array2[i] + " | ");  
+//       }
+// }
+// else  
+// {
+//     Console.WriteLine("This is not a number between 1 and 100000"); 
+// }
