@@ -50,21 +50,6 @@
 // Console.WriteLine("Add the sounding number in the array and press ENTER");
 // int found = Convert.ToInt32(Console.ReadLine());
 
-// //-----alternative yes/no works
-// // int answer = 0;
-// // for (int i = 0; i < array.Length; i++)
-// //     if (array[i] == found)
-// //     { 
-// //         Console.WriteLine("YES, There is " + found + " in the array");
-// //         answer = 1;
-// //         break; // for() Full stop
-// //     }
-
-// // if (answer == 0) 
-// // Console.WriteLine("NO, There is no " + found + " in the array");
-// //-----------------------------
-
-// //---------alternative 02-----
 // bool flag = false;
 // for (int i = 0; i < array.Length; i++)
 //     if (array[i] == found)
@@ -75,13 +60,29 @@
 //     }
 
 
-if (flag == false) 
-Console.WriteLine("NO, There is no " + found + " in the array");
+// if (flag == false) 
+// Console.WriteLine("NO, There is no " + found + " in the array");
 
-//--------------------------------------------
-Задайте массив из 10 элементовб заполненный числами из промежутка
-[-10, 10]. Замените отридцательные элементы положительными а положительные
-отридцательными.
-пример
-[1,-5,6] => [-1;-5;6]
+// //--------------------------------------------
+// Задайте массив из 10 элементовб заполненный числами из промежутка
+// [-10, 10]. Замените отридцательные элементы положительными а положительные
+// отридцательными.
+// пример
+// [1,-5,6] => [-1;-5;6]
+
+Console.Clear();
+int[] array = new int[10];
+for(int i = 0; i < array.Length; i++)
+    array[i] = new Random().Next(-10,11);
+    
+Console.WriteLine(string.Join(" | ", array));
+
+for(int i = 0; i < array.Length; i++)
+    array[i] = array[i] * -1;
+    
+Console.WriteLine(string.Join(" | ", array));
+
+
+
+
 
