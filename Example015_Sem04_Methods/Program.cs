@@ -100,40 +100,124 @@ Console.Clear();
 // [ 4 3 4 1 9 5 21 13] => 3
 //------------------------------------------
 
-void InputArray(int[] array)
+// void InputArray(int[] array)
 
-{
-    for(int i = 0; i < array.Length; i++)
-    array[i] = new Random().Next(0,20);
-}
+// {
+//     for(int i = 0; i < array.Length; i++)
+//     array[i] = new Random().Next(0,20);
+// }
 
-bool CheckSimple(int x)//returning true if the number is simple
-{
-    for (int j = 2; j < x; j++)
-        {
-         if (x % j == 0) return false;
-        }
-    return true;
-}
+// bool CheckSimple(int x)//returning true if the number is simple
+// {
+//     for (int j = 2; j < x; j++)
+//         {
+//          if (x % j == 0) return false;
+//         }
+//     return true;
+// }
 
-void ReleaseArray(int [] array)
-{
-    int count  = 0;
-    for (int i = 0; i < array.Length; i++)
-    {
-       if  (CheckSimple(array [i]) == true)
-            count ++;
-    }
-    Console.WriteLine(count);
-}
+// void ReleaseArray(int [] array)
+// {
+//     int count  = 0;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//        if  (CheckSimple(array [i]) == true)
+//             count ++;
+//     }
+//     Console.WriteLine(count);
+// }
 
-Console.Clear();
-Console.WriteLine("Add the number of elements in the Array and press ENTER");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Clear();
-int[] array = new int[n];
-InputArray(array);
-Console.WriteLine(string.Join(" | ", array));
-ReleaseArray(array);
+// Console.Clear();
+// Console.WriteLine("Add the number of elements in the Array and press ENTER");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.Clear();
+// int[] array = new int[n];
+// InputArray(array);
+// Console.WriteLine(string.Join(" | ", array));
+// ReleaseArray(array);
 
 
+
+//================================================================================= Task 02
+// Задайте массив из N случайных чисел, (N вводится
+// с клавиатуры).
+// Найдите количество чисел, которые оканчиваются на 1 и 
+// делятся нацело на 7.
+// пример:
+// [1 5 11 21 81 4 0 91 2 3] => 2
+//--------------------------------------- my decision
+// void InputArray(int[] array)
+// {
+//     for(int i = 0; i < array.Length; i++)
+//     array[i] = new Random().Next(0,22);
+// }
+
+// bool CheckSimple(int x)//returning true if the number is simple
+// {
+//     if (x % 7 !=0) return false; // check point/7
+
+//     if (x > 9) // check last symb = 1
+//     {
+//          if (x % 10 != 1) return false;
+//     }
+//     if (x < 10) // check last symb = 1
+//     {
+//      return false;
+//     }
+    
+//     return true;
+// }
+
+// void ReleaseArray(int [] array)
+// {
+//     int count  = 0;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//        if  (CheckSimple(array [i]) == true)
+//             count ++;
+//     }
+//     Console.WriteLine(count);
+// }
+
+// Console.Clear();
+// Console.WriteLine("Add the number of elements in the Array and press ENTER");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.Clear();
+// int[] array = new int[n];
+// InputArray(array);
+// Console.WriteLine(string.Join(" | ", array));
+// ReleaseArray(array);
+
+//--------------------------------------- teacher decision
+// void InputArray(int[] array)
+// {
+//     for(int i = 0; i < array.Length; i++)
+//     array[i] = new Random().Next(19,23);
+// }
+
+// bool CheckSimple(int x)//returning true if the number is simple
+// {
+//     if (x % 10 == 1 && x % 7 == 0)
+//         return true;
+//     else return false;
+// }
+
+// void ReleaseArray(int [] array)
+// {
+//     int count  = 0;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//        if  (CheckSimple(array [i]) == true)
+//             count ++;
+//     }
+//     Console.WriteLine(count);
+// }
+
+// Console.Clear();
+// Console.WriteLine("Add the number of elements in the Array and press ENTER");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.Clear();
+// int[] array = new int[n];
+// InputArray(array);
+// Console.WriteLine(string.Join(" | ", array));
+// ReleaseArray(array);
